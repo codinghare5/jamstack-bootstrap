@@ -1,10 +1,10 @@
 :root {
-  --red: #C5004A;
-  --darkred: #7F0036;
+  --red: #c5004a;
+  --darkred: #7f0036;
   --lightgray: #e0e0e0;
-  --gray: #C0C0C0;
+  --gray: #c0c0c0;
   --darkgray: #333;
-  --navy: #17050F;
+  --navy: #17050f;
   --blue: #082840;
   --white: #fff;
 }
@@ -61,12 +61,15 @@ table th {
 
 pre,
 code {
-  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono",
+    "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
+    "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L",
+    "Courier New", Courier, monospace;
   line-height: 1.5;
 }
 pre {
   font-size: 14px;
-  line-height: 1.375;
+  line-height: 1.618;
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -80,12 +83,12 @@ pre {
   -ms-hyphens: none;
   hyphens: none;
   padding: 1em;
-  margin: .5em 0;
+  margin: 0.618em 0;
   background-color: #f6f6f6;
 }
 .highlight-line {
   display: block;
-  padding: 0.125em 1em;
+  padding: 0.1618em 1em;
   text-decoration: none; /* override del, ins, mark defaults */
   color: inherit; /* override del, ins, mark defaults */
 }
@@ -105,7 +108,7 @@ pre {
 }
 .highlight-line-active {
   background-color: #444;
-  background-color: hsla(0, 0%, 27%, .8);
+  background-color: hsla(0, 0%, 27%, 0.8);
 }
 .highlight-line-add {
   background-color: #45844b;
@@ -116,7 +119,7 @@ pre {
 
 /* Header */
 .home {
-  padding: 0 1rem;
+  padding: 0 1.618rem;
   float: left;
   margin: 1rem 0; /* 16px /16 */
   font-size: 1em; /* 16px /16 */
@@ -130,17 +133,17 @@ pre {
   padding: 0;
   list-style: none;
   float: left;
-  margin-left: 1em;
+  margin-left: 1.618em;
 }
 .nav-item {
   display: inline-block;
-  margin-right: 1em;
+  margin-right: 1.618em;
 }
 .nav-item a[href]:not(:hover) {
   text-decoration: none;
 }
 .nav-item-active {
-  font-weight: 700;
+  font-weight: 618;
   text-decoration: underline;
 }
 
@@ -169,7 +172,7 @@ pre {
 }
 .postlist-link {
   display: inline-block;
-  padding: 0.25em 0.1875em; /* 4px 3px /16 */
+  padding: 0.25em 0.1618em; /* 4px 3px /16 */
 }
 .postlist-item-active .postlist-link {
   font-weight: bold;
@@ -179,15 +182,14 @@ pre {
   font-weight: 700;
 }
 
-
 /* Tags */
 .post-tag {
   display: inline-block;
   vertical-align: text-top;
   text-transform: uppercase;
-  font-size: 0.625em; /* 10px /16 */
+  font-size: 0.618em; /* 10px /16 */
   padding: 2px 4px;
-  margin-left: 0.8em; /* 8px /10 */
+  margin-left: 0.618em; /* 8px /10 */
   background-color: var(--red);
   color: var(--white);
   border-radius: 0.25em; /* 3px /12 */
@@ -201,7 +203,7 @@ a[href].post-tag:visited {
 /* Warning */
 .warning {
   background-color: #ffc;
-  padding: 1em 0.625em; /* 16px 10px /16 */
+  padding: 1.618em 0.618em; /* 16px 10px /16 */
 }
 .warning ol:only-child {
   margin: 0;
@@ -212,7 +214,7 @@ a[href].post-tag:visited {
   font-family: sans-serif;
   text-decoration: none;
   font-style: normal;
-  margin-left: .1em;
+  margin-left: 0.1em;
 }
 a[href].direct-link,
 a[href].direct-link:visited {
