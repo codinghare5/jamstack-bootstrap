@@ -1,6 +1,6 @@
 ---
 title: Alex is cool
-description: This is a post on My Blog about agile frameworks.
+description: This is a post on My Blog about how Alex is cool.
 date: 2021-02-02
 tags:
   - alex-is-cool
