@@ -226,3 +226,7 @@ a[href].direct-link:focus:visited,
 :hover > a[href].direct-link:visited {
   color: #aaa;
 }
+.invis {
+  visibility: hidden;
+  text-decoration: rgba(255, 255, 255, 0);
+}

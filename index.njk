@@ -4,9 +4,9 @@ eleventyNavigation:
   key: Home
   order: 1
 ---
-google-site-verification: google2580e1c8142c0c89.html
+<h4 class="invis">google-site-verification: google2580e1c8142c0c89.html</h4>
 {% set maxPosts = collections.posts.length | min(3) %}
-<h1>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h1>
+<h3>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h3>
 
 {% set postslist = collections.posts | head(-3) %}
 {% set postslistCounter = collections.posts | length %}
