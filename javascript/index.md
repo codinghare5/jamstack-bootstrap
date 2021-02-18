@@ -22,7 +22,7 @@ eleventyNavigation:
   full_name = first_name + ' ' + last_name;
   console.log(full_name);
   // Bill
-  var pre_tip_total = 35.86;
+  var pre_tip_total = 35.85;
   var one_percent = pre_tip_total / 100;
   var tip_percent = 15;
   var tip_amount = one_percent * tip_percent;
