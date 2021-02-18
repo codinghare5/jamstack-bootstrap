@@ -12,61 +12,41 @@
     <link rel="stylesheet" href="{{ '/css/bootstrap/css/bootstrap.min.css' | url }}">
   </head>
   <body>
-    <!-- Start Header Area -->
-    <header class="header">
-      <div class="navbar-area">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-12">
-              <nav class="navbar navbar-expand-lg">
-                <a href="{{ '/' | url }}">{{ metadata.title }}</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="toggler-icon"></span>
-                  <span class="toggler-icon"></span>
-                  <span class="toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                  <ul class="nav">
-                    {%- for entry in collections.all | eleventyNavigation %}
-                      <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
-                        <a href="{{ entry.url | url }}">{{ entry.title }}</a>
-                      </li>
-                    {%- endfor %}
-                  </ul>
-                </div>
-                <!-- navbar collapse -->
-              </nav>
-              <!-- navbar -->
-            </div>
+    <header>
+      <h1 class="home">
+        <a href="{{ '/' | url }}"></a>
+      </h1>
+
+      {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">{{ metadata.title }}</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav">
+              {%- for entry in collections.all | eleventyNavigation %}
+                <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
+                  <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+                </li>
+              {%- endfor %}
+            </ul>
           </div>
-          <!-- row -->
         </div>
-        <!-- container -->
-      </div>
-      <!-- navbar area -->
+      </nav>
     </header>
-    <!-- End Header Area -->
 
     <main {% if templateClass %} class="{{ templateClass }}" {% endif %}>
       {{ content | safe }}
     </main>
 
-    <footer></footer>
-
-    <!-- Current page: {{ page.url | url }} -->
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+      </div>
+    </footer>
     <script src="{{ '/css/bootstrap/js/bootstrap.min.js' | url }}"></script>
-    <script>
-      //===== close navbar-collapse when a  clicked
-      let navbarToggler = document.querySelector(".navbar-toggler");
-      var navbarCollapse = document.querySelector(".collapse");
-      navbarToggler.addEventListener('click', function () {
-        navbarToggler
-          .classList
-          .toggle("active");
-        navbarCollapse
-          .classList
-          .toggle("show");
-      })
-    </script>
+    <!-- Current page: {{ page.url | url }} -->
   </body>
 </html>
