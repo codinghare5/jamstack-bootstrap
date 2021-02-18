@@ -29,6 +29,7 @@ eleventyNavigation:
   console.log(tip_amount);
   tip_amount = tip_amount.toFixed(2); // turns into a string
   bill_total = parseFloat(pre_tip_total) + parseFloat(tip_amount);
+  bill_total = bill_total.toFixed(2);
   console.log(bill_total);
   str_message = 'Your food bill was £' + pre_tip_total + ', you have tipped ' + tip_percent + 
                         '% which equals £' + tip_amount + ', bringing your total bill £' + bill_total + '.';
