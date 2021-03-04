@@ -129,6 +129,7 @@ pre {
   list-style: none;
   float: left;
   margin-left: 1em;
+  align-items: center;
 }
 .nav-item {
   display: inline-block;

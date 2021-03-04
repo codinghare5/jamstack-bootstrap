@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">{{ metadata.title }}</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="nav">
+                {%- for entry in collections.mainmenu | eleventyNavigation %}
+                    <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
+                        <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+                    </li>
+                {%- endfor %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Practical
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        {%- for practical in collections.practicals | eleventyNavigation %}
+                            <li>
+                                <a class="dropdown-item" href="{{ practical.url | url }}">{{ practical.title }}</a>
+                            </li>
+                        {%- endfor %}
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
