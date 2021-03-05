@@ -14,28 +14,7 @@
   </head>
   <body>
     <header>
-      <h1 class="home">
-        <a href="{{ '/' | url }}"></a>
-      </h1>
-
-      {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">{{ metadata.title }}</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav">
-              {%- for entry in collections.all | eleventyNavigation %}
-                <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
-                  <a href="{{ entry.url | url }}">{{ entry.title }}</a>
-                </li>
-              {%- endfor %}
-            </ul>
-          </div>
-        </div>
-      </nav>
+      {% include "../header.njk" %}
     </header>
 
     <main {% if templateClass %} class="{{ templateClass }}" {% endif %}>
@@ -44,7 +23,7 @@
 
     <footer class="footer">
       <div class="container">
-        <span class="text-muted">Place sticky footer content here.</span>
+        <span class="text-muted">&#169; 2021 Marcin Mukosiej</span>
       </div>
     </footer>
     <script src="{{ '/css/bootstrap/js/bootstrap.min.js' | url }}"></script>

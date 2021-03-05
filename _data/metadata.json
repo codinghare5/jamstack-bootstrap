@@ -1,9 +1,9 @@
 {
-  "title": "Marcin's Example Blog of how Alex is cool",
+  "title": "Marcin's Example Blog",
   "url": "https://alexiscool.netlify.app/",
   "description": "Marcin's blog. Alex is cool",
   "feed": {
-    "subtitle": "I am writing about my experience from the JAMStack course and Alex is cool",
+    "subtitle": "I am writing about my experience from the JAMStack course",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "id": "https://alexiscool.netlify.app/"

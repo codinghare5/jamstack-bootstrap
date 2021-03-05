@@ -1,0 +1,43 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-post
+---
+<div class="container">
+  <h3>{{ title }}</h3>
+  <form>
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="First name" aria-label="First name" name="firstname">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Surname" aria-label="Surname" name="surname">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Email" aria-label="Email" name="email">
+      </div>
+    </div>
+    <textarea name="message" class="form-control" placeholder="Leave a message here" id="floatingTextarea2" style="height: 100px"></textarea>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="terms" name="terms">
+        <label class="form-check-label" for="terms">
+          I agree to the
+          <a href="#">Terms & Conditions</a>
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="mc" name="mc">
+        <label class="form-check-label" for="mc">
+          Sign up to MC
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</div>

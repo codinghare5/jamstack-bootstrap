@@ -4,7 +4,7 @@ title: Javascript
 templateClass: tmpl-home
 eleventyNavigation:
   key: Javascript
-  order: 5
+  order: 3
 ---
 
 <div class="container mt-4">
