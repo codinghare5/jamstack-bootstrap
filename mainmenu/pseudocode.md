@@ -4,7 +4,7 @@ title: Pseudocode
 templateClass: tmpl-home
 eleventyNavigation:
   key: Pseudocode
-  order: 7
+  order: 5
 ---
 
 <div class="container mt-4">

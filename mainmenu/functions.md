@@ -4,7 +4,7 @@ title: Functions & Control Flow
 templateClass: tmpl-home
 eleventyNavigation:
   key: Functions & Control Flow
-  order: 6
+  order: 4
 ---
 
 <div class="containet mt-4">
