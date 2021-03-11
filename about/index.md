@@ -1,10 +1,10 @@
 ---
 layout: layouts/post.njk
-title: About Alex
+title: About me
 templateClass: tmpl-post
 eleventyNavigation:
-  key: About how Alex is cool
+  key: About me
   order: 3
 ---
 
-I am trying to tell you that Alex is cool.
+Here goes more information about me and the stuff I do.

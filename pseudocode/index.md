@@ -5,6 +5,7 @@ templateClass: tmpl-home
 eleventyNavigation:
   key: Pseudocode
   order: 7
+  parent: Javascript
 ---
 
 <div class="container mt-4">

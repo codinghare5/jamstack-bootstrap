@@ -1,0 +1,65 @@
+/* CSS files add styling rules to your content */
+
+body table {
+  border: 2px solid #800080;
+  width: 80%;
+  padding: 10px;
+  font-size: 24px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+  line-height: 1.5em;
+}
+
+table,
+th,
+td {
+  text-align: center;
+}
+
+th,
+td {
+  font-size: 0.65em;
+}
+
+td:first-child {
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-image: url(../img/noise.png);
+  background-color: #e495e4;
+}
+table tr:nth-child(odd) {
+  background-color: #ff33cc;
+}
+
+table caption {
+  text-align: right;
+  font-size: 12px;
+  padding-right: 10px;
+}
+
+table caption,
+table thead th,
+table tfoot td {
+  font-family: "Rock Salt", cursive;
+}
+
+table thead,
+table tfoot {
+  background-size: 10%;
+}
+
+table thead th,
+table tfoot td {
+  border: 2px solid #800080;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+    url(../img/leopardskin.jpg);
+}
+
+table tfoot td:last-child {
+  padding-left: 10px;
+}

@@ -1,0 +1,83 @@
+<!-- collapsible nav bar with drop down list -->
+<nav class="navbar navbar-expand-lg ms-3 pb-4" role="navigation">
+    <div class="container-fluid">
+        <!-- "logo" -->
+        <a href="{{ '/' | url }}" class="text-decoration-none border border-primary
+                    border-5 rounded-pill text-center bg-primary
+                    text-light bg-gradient px-3">
+            <div class="fs-3 text-nowrap">
+                {{ metadata.title }}
+            </div>
+        </a>
+        <!-- button for collapse navigation -->
+        <button class="navbar-toggler navbar-light bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- collapsible responsive nav bar -->
+        <div class="collapse navbar-collapse navbar-light bg-light rounded-pill" id="navbarNav">
+            {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
+            <!-- nav gives a horizontal menu when click the button navbar-nav gives you a vertical menu -->
+            <ul class="nav fs-4 ms-5">
+                {% for entry in collections.all | eleventyNavigation %}
+                    {% if not entry.children.length %}
+                        <li class="nav-item border
+                        {% if entry.url == page.url %} active fw-bold text-decoration-underline" aria-current="page" {% endif %}>
+                            <a class="nav-link" href=" {{ entry.url | url }} ">
+                                {{ entry.title }}
+                            </a>
+                        </li>
+                    {% else %}
+                        <!-- there are children -->
+                        {% if entry.parentType == 'dummy' %}
+                            <!-- empty parent page with no content -->
+                            <li class="nav-item dropdown border
+                            {% if entry.url == page.url %} active fw-bold" aria-current="page" {% endif %}>
+                                <div class="nav-link dropdown-toggle text-decoration-none" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    {{ entry.title }}
+                                </div>
+                            </li>
+                        {% else %}
+                            <!-- parent-type = 'index' (hopefully - can actually just mark dummy pages) -->
+                            <li class="nav-item dropdown border d-flex
+                                            {% if entry.url == page.url %} active fw-bold text-decoration-underline" aria-current="page" {% endif %}>
+                                <a class="nav-link pe-1 border-end" href="{{ entry.url | url }}">
+                                    {{ entry.title }}
+                                </a>
+                                <div class="nav-link dropdown-toggle ps-1" id="navbarMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#"></div>
+                            {% endif %}
+                            <!-- Finished dealing with top menu item, but still need to deal with children -->
+
+                            <!-- deal with children for both types of dropdown menu item -->
+                            <ul class="dropdown-menu bg-light border" aria-labelledby="navbarMenuLink">
+                                {% for child in entry.children %}
+                                    <li {% if child.url == page.url %} class="border" aria-current="page" {% endif %}>
+                                        <a class="dropdown-item {% if child.url == page.url %} fw-bold {% endif %}" href="{{ child.url | url }}">
+                                            {{ child.title }}
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% endif %}
+                {%- endfor %}
+            </ul>
+        </div>
+    </div>
+</nav>
+
+LOOP through menu items
+    IF item has no children
+        THEN put it as simple link
+    ELSE
+        IF item's {parentType} is {dummy}
+            THEN put it without a link as dropdown
+            AND add toggle arrow
+        ELSE
+            THEN put it with a link
+            AND add toggle arrow
+        ENDIF
+        LOOP through current item's children
+            PUT the child's link and title
+        ENDLOOP
+    ENDIF
+ENDLOOP

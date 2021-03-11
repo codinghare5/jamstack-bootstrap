@@ -5,6 +5,7 @@ templateClass: tmpl-home
 eleventyNavigation:
   key: Functions & Control Flow
   order: 6
+  parent: Javascript
 ---
 
 <div class="containet mt-4">
