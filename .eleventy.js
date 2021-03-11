@@ -51,7 +51,6 @@ module.exports = function(eleventyConfig) {
             case "nav":
             case "post":
             case "posts":
-            case "mainmenu":
               return false;
           }
 
@@ -71,7 +70,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
-  eleventyConfig.addPassthroughCopy("mainmenu");
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({

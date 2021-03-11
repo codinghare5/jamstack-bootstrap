@@ -6,23 +6,32 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="nav">
-                {%- for entry in collections.mainmenu | eleventyNavigation %}
-                    <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
-                        <a href="{{ entry.url | url }}">{{ entry.title }}</a>
-                    </li>
-                {%- endfor %}
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Practical
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        {%- for practical in collections.practicals | eleventyNavigation %}
-                            <li>
-                                <a class="dropdown-item" href="{{ practical.url | url }}">{{ practical.title }}</a>
-                            </li>
-                        {%- endfor %}
-                    </ul>
-                </li>
+                {% for entry in collections.all | eleventyNavigation %}
+                    {% if not entry.children.length %}
+                        <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
+                            <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+                        </li>
+                    {% else %}
+                        {% if entry.parentType == 'dummy' %}
+                            <li class="nav-item dropdown">
+                                <div class="nav-link dropdown-toggle text-decoration-none" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    {{ entry.title }}
+                                </div>
+                            {% else %}
+                                <!-- commented out else statement as we don't need it i guess <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="{{ entry.url | url }}" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> {{ entry.title }} </a> <div class="nav-link dropdown-toggle ps-1" id="navbarMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#"></div> -->
+                            {% endif %}
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                {% for child in entry.children %}
+                                    <li {% if child.url == page.url %} class="border" aria-current="page" {% endif %}>
+                                        <a class="dropdown-item {% if child.url == page.url %} fw-bold {% endif %}" href="{{ child.url | url }}">
+                                            {{ child.title }}
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% endif %}
+                {% endfor %}
             </ul>
         </div>
     </div>
