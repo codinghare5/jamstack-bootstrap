@@ -1,12 +1,14 @@
 ---
-title: To jest mój pierwszy post.
-description: This is a post on My Blog about agile frameworks.
+title: This is my first post.
+description: This is a post on My JAMStack Blog. The HTML table challenge.
 date: 2021-02-24
 tags:
-  - another-tag
-  - different
+  - html
+  - challenge
 layout: layouts/post.njk
-image: /img/lemur.jpg
+image: /img/table.jpg
 ---
 
-Hej! To jest nasz pierwszy post na 11ty.
+This is a post on My Blog about the first challenge given to me by CodersGuild on JAMStack Bootcamp.
+The challenge was to:
+'Build the table as shown in the image. When properly and semantically marked up you do not need classes to style as required.'
