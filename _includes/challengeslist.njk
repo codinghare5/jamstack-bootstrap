@@ -1,0 +1,29 @@
+<div class="row">
+    {% for challenge in challengeslist %}
+        <div class="col-lg-3 col-md-4 col-12">
+            <a href="{{ challenge.url | url }}" class="postlist-link">
+                {% if challenge.data.image %}
+                    <img src="{{ challenge.data.image }}"/>
+                {% endif %}
+            </a>
+            <a href="{{ challenge.url | url }}" class="postlist-link">
+                {% if challenge.data.title %}
+                    {{ challenge.data.title }}
+                {% else %}
+                    <code>{{ challenge.url }}</code>
+                {% endif %}
+            </a>
+            <div class="timeContainer">
+                <time class="postlist-date" datetime="{{ challenge.date | htmlDateString }}">{{ challenge.date | readableDate }}</time>
+            </div>
+            <div class="tagContainer">
+                {% for tag in challenge.data.tags %}
+                    {% if collections.tagList.indexOf(tag) != -1 %}
+                        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+                        <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    {% endfor %}
+</div>

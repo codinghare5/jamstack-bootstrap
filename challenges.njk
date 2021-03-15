@@ -1,0 +1,14 @@
+---
+layout: layouts/base.njk
+permalink: /challenges/
+eleventyNavigation:
+  key: Challenges
+  order: 2
+---
+
+<div class="container mt-4">
+  <h3>List of challenges</h3>
+
+  {% set challengeslist = collections.challenges %}
+  {% include "challengeslist.njk" %}
+</div>

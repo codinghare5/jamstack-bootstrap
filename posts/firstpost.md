@@ -6,7 +6,7 @@ tags:
   - html
   - challenge
 layout: layouts/post.njk
-image: /img/table.jpg
+image: /img/table.png
 ---
 
 This is a post on My Blog about the first challenge given to me by CodersGuild on JAMStack Bootcamp.
