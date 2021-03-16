@@ -15,4 +15,4 @@ image: /img/compare.jpg
   <p>Open the console to view the results.</p>
   <code></code>
 </div>
-<script src="/js/js-challenges/ch4-compare.js"></script>
+<script src="/js/js-challenges/ch4-bigger.js"></script>
