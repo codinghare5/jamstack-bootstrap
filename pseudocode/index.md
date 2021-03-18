@@ -9,6 +9,7 @@ eleventyNavigation:
 ---
 
 <div class="container mt-4">
+  <h3>Fizz Buzz</h3>
   <code>
     <pre>
       LOOP through numbers 0 - 100
