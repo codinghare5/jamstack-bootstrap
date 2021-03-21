@@ -28,10 +28,7 @@ function areaOfCircle(radius) {
 }
 
 function allInOne(number) {
-  squareNumber(number);
-  halfNumber(number);
-  percentOf(50, number);
-  areaOfCircle(number);
+  areaOfCircle(percentOf(50, halfNumber(squareNumber(number))));
 }
 
 allInOne(5);
