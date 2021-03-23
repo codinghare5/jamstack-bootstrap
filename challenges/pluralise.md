@@ -100,5 +100,6 @@ Bonus reference: https://www.wordexample.com/list/words-same-plural
   console.log(pluralise(2, ""));
   </pre>
   </code>
+  <!-- TODO: add used methods -->
 </div>
 <script src="/js/js-challenges/ch8-pluralise.js"></script>
