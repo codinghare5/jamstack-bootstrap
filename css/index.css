@@ -38,6 +38,10 @@ a[href]:visited {
 main :first-child {
   margin-top: 0;
 }
+main :first-child .form-check-input{
+  align-items: center;
+  margin-top: revert;
+}
 header {
   border-bottom: 1px dashed var(--lightgray);
 }

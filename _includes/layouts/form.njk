@@ -4,6 +4,7 @@ templateClass: tmpl-post
 ---
 <div class="container">
   <h3>{{ title }}</h3>
+  {{ content | safe }}
   <form>
     <div class="row">
       <div class="col">

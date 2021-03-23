@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-post
+---
+<div class="container">
+  <h3>{{ title }}</h3>
+
+  {{ content | safe }}
+
+</div>
+
+<hr>
+<ul>
+  {%- set next = collections.challenges | getNextCollectionItem(page) %}
+  {%- if next %}
+    <li>Next:
+      <a href="{{ next.url | url }}">{{ next.data.title }}</a>
+    </li>
+  {% endif %}
+  {%- set previous = collections.challenges | getPreviousCollectionItem(page) %}
+  {%- if previous %}
+    <li>Previous:
+      <a href="{{ previous.url | url }}">{{ previous.data.title }}</a>
+    </li>
+  {% endif %}
+</ul>
