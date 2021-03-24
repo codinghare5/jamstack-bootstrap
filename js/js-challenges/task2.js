@@ -53,5 +53,5 @@ for (var i = 0; i < myRecipe.ingredients.length; i++) {
 document.write("</ul>");
 document.write("<h3>Directions:</h3>");
 for (var i = 0; i < myRecipe.directions.length; i++) {
-  document.write(`${myRecipe.directions[i]}`);
+  document.write(`${myRecipe.directions[i]} `);
 }
