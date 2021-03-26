@@ -1,10 +1,11 @@
 ---
 title: The DOM Object.
-description: This is a post on My JAMStack Blog. The HTML table challenge.
+description: The introduction to the DOM. All the tasks from today's sessio.
 date: 2021-03-25
 tags:
-  - html
-  - challenge
+  - javascript
+  - tasks
+  - DOM
 layout: layouts/post.njk
 image: /img/table.png
 ---
