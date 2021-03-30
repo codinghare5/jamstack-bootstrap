@@ -4,10 +4,10 @@ description: This is JavaScript funcion.
 date: 2021-03-23
 tags:
   - javascript
-  - loops
-  - arrays
-  - objects
-  - practicals
+  - loop
+  - array
+  - object
+  - practical
 layout: layouts/challenge.njk
 image: /img/objects.jpg
 ---
