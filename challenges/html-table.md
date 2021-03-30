@@ -37,44 +37,44 @@ layout: layouts/challenge.njk
                 <tr>
                     <td>The Clash</td>
                     <td>1976</td>
-                    <td>No. of albums</td>
-                    <td>Most famous songs</td>
+                    <td>6</td>
+                    <td>London Calling</td>
                 </tr>
                 <tr>
                     <td>The Damned</td>
                     <td>1976</td>
-                    <td>No. of albums</td>
-                    <td>Most famous songs</td>
+                    <td>10</td>
+                    <td>Smash it up</td>
                 </tr>
                 <tr>
                     <td>Sex Pistols</td>
                     <td>1975</td>
-                    <td>No. of albums</td>
-                    <td>Most famous songs</td>
+                    <td>1</td>
+                    <td>Anarchy in the UK</td>
                 </tr>
                 <tr>
                     <td>Sham 69</td>
                     <td>1976</td>
-                    <td>No. of albums</td>
-                    <td>Most famous songs</td>
+                    <td>13</td>
+                    <td>If The Kids Are United</td>
                 </tr>
                 <tr>
                     <td>Siouxsie and the Banshees</td>
                     <td>1976</td>
-                    <td>No. of albums</td>
-                    <td>Most famous songs</td>
+                    <td>11</td>
+                    <td>Hong Kong Garden</td>
                 </tr>
                 <tr>
                     <td>Stiff Little Fingers</td>
                     <td>1977</td>
-                    <td>No. of albums</td>
-                    <td>Most famous songs</td>
+                    <td>10</td>
+                    <td>Suspect Device</td>
                 </tr>
                 <tr>
                     <td>The Stranglers</td>
                     <td>1974</td>
-                    <td>No. of albums</td>
-                    <td>Most famous songs</td>
+                    <td>17</td>
+                    <td>No More Heroes</td>
                 </tr>
             </tbody>
             <tfoot>
