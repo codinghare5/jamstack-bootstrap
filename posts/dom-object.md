@@ -7,7 +7,7 @@ tags:
   - task
   - DOM
 layout: layouts/post.njk
-image: /img/table.png
+image: /img/dom.jpg
 ---
 
 <div id="task1wrapper">
