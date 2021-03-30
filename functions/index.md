@@ -17,16 +17,16 @@ eleventyNavigation:
   function outputMessage() {
     console.log("This is a message!");
   }
-  //function from task 1
+  //function from task 2
   function fullNameGenerator(firstName, lastName){
     var fullName = firstName + ' ' + lastName
     console.log(fullName);
   }
-  //function from task 1
+  //function from task 3
   function fullNameGeneratorReturn(firstName, lastName){
     return firstName + ' ' + lastName;
   }
-  //function from task 1
+  //function from task 4
   function wearACoat(temperature){
     var strMessage = "You don't need to wear a coat!";
     if (temperature < 10){
@@ -34,21 +34,21 @@ eleventyNavigation:
     }
     return strMessage;
   }
-  console.log("Task 1 below");
+  console.log("Task 1 above");
   console.log("-------------");
   //Calls the output message
   outputMessage();
   console.log("-------------");
-  console.log("Task 1 above");
-  console.log("Task 2 below");
+  console.log("Task 1 below");
+  console.log("Task 2 above");
   console.log("-------------");
   //Calls the output message
   var fName = 'Marcin';
   var lName = 'Mukosiej';
   fullNameGenerator(fName, lName);
   console.log("-------------");
-  console.log("Task 2 above");
-  console.log("Task 3 below");
+  console.log("Task 2 below");
+  console.log("Task 3 above");
   console.log("-------------");
   //Calls the output message
   var fName = 'Marcin';
@@ -56,8 +56,8 @@ eleventyNavigation:
   var fullName = fullNameGeneratorReturn(fName, lName);
   console.log(fullName);
   console.log("-------------");
-  console.log("Task 3 above");
-  console.log("Task 4 below");
+  console.log("Task 3 below");
+  console.log("Task 4 above");
   console.log("-------------");
   var temp1 = wearACoat(15);
   var temp2 = wearACoat(9);
@@ -66,7 +66,8 @@ eleventyNavigation:
   console.log(temp2);
   console.log(temp3);
   console.log("-------------");
-  console.log("Task 4 above");
+  console.log("Task 4 below");
+    console.log("Task 5 above");
   /*----- Task5 -----*/
   function wearACoatExtra(temperature){
     var strMessage;

@@ -5,6 +5,7 @@ date: 2021-02-24
 tags:
   - html
   - challenge
+  - task
 layout: layouts/post.njk
 image: /img/table.png
 ---

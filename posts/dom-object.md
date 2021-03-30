@@ -4,7 +4,7 @@ description: The introduction to the DOM. All the tasks from today's sessio.
 date: 2021-03-25
 tags:
   - javascript
-  - tasks
+  - task
   - DOM
 layout: layouts/post.njk
 image: /img/table.png
