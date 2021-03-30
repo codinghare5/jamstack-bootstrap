@@ -1,5 +1,5 @@
 ---
-layout: layouts/home.njk
+title: Functions and control flow.
 description: This is todays lesson task.
 date: 2021-03-16
 tags:
