@@ -1,3 +1,9 @@
+---
+eleventyNavigation:
+  key: CMS
+  order: 9
+---
+
 <html>
   <head>
     <meta charset="utf-8" />

@@ -1,6 +1,6 @@
 ---
 title: Functions and control flow.
-description: This is todays lesson task.
+description: Tasks from Lesson 10.
 date: 2021-03-16
 tags:
   - javascript
@@ -10,9 +10,34 @@ layout: layouts/post.njk
 image: /img/coat.jpg
 ---
 
-<div class="containet mt-4">
+<div class="container mt-4">
   <h1>Basic Javascript tasks</h1>
   <p>Open the console to see results.</p>
+  <code>
+  <pre>
+  //function from task 1
+  function outputMessage() {
+    console.log("This is a message!");
+  }
+  //function from task 2
+  function fullNameGenerator(firstName, lastName){
+    var fullName = firstName + ' ' + lastName
+    console.log(fullName);
+  }
+  //function from task 3
+  function fullNameGeneratorReturn(firstName, lastName){
+    return firstName + ' ' + lastName;
+  }
+  //function from task 4
+  function wearACoat(temperature){
+    var strMessage = "You don't need to wear a coat!";
+    if (temperature < 10){
+      strMessage = "You need to wear a coat.";
+    }
+    return strMessage;
+  }
+  </pre>
+  </code>
 </div>
 <script>
   //function from task 1
