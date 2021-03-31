@@ -7,7 +7,7 @@ tags:
   - challenge
   - function
 layout: layouts/challenge.njk
-image: /img/objects.jpg
+image: /img/loops.jpg
 ---
 
 <div class="container mt-4">
