@@ -1,12 +1,12 @@
 ---
-title: This is my first post.
+title: The HTML table challenge.
 description: This is a post on My JAMStack Blog. The HTML table challenge.
-date: 2021-02-24
+date: 2021-01-26
 tags:
   - html
   - challenge
   - task
-layout: layouts/challenge.njk
+layout: layouts/post.njk
 image: /img/table.png
 ---
 
