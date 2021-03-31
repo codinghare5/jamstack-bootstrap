@@ -1,7 +1,7 @@
 ---
 title: The tip calculator.
 description: Task from Lesson 9.
-date: 2021-02-24
+date: 2021-02-18
 tags:
   - task
   - javascript

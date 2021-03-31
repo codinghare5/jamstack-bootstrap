@@ -1,11 +1,12 @@
 ---
-title: Functions and control flow.
+title: Functions and control flow - practical.
 description: Tasks from Lesson 10.
-date: 2021-03-16
+date: 2021-02-25
 tags:
   - javascript
   - task
   - function
+  - practical
 layout: layouts/post.njk
 image: /img/coat.jpg
 ---

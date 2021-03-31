@@ -8,7 +8,7 @@ tags:
   - array
   - object
   - practical
-layout: layouts/challenge.njk
+layout: layouts/post.njk
 image: /img/objects.jpg
 ---
 
@@ -18,4 +18,6 @@ image: /img/objects.jpg
   <code></code>
 </div>
 
+<script src="/js/js-challenges/task1.js"></script>
+<script src="/js/js-challenges/task2.js"></script>
 <script src="/js/js-challenges/task3.js"></script>

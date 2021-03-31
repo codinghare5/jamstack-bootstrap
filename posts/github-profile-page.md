@@ -1,6 +1,6 @@
 ---
-title: Create Github Profile.
-description: I have created the Github profile.
+title: Create Github Profile Page.
+description: I have created the Github profile page.
 date: 2021-01-19
 tags:
   - github
