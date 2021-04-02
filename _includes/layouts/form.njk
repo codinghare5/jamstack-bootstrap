@@ -2,43 +2,83 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
+
 <div class="container">
   <h3>{{ title }}</h3>
   {{ content | safe }}
-  <form>
+  <!-- the form starts here action sends data to the home page -->
+  <form class="needs-validation" name="contact" data-netlify="true" data-netlify-recaptcha="true" novalidate>
     <div class="row">
       <div class="col">
-        <input type="text" class="form-control" placeholder="First name" aria-label="First name" name="firstname">
+        <!-- First name field -->
+        <input id="first_name" type="text" class="form-control" placeholder="First name" aria-label="First name"
+          name="firstname" required>
+        <div class="invalid-feedback">Please enter your first name.</div>
       </div>
       <div class="col">
-        <input type="text" class="form-control" placeholder="Surname" aria-label="Surname" name="surname">
+        <!-- Surname field -->
+        <input id="surname" type="text" class="form-control" placeholder="Surname" aria-label="Surname" name="surname"
+          required>
+        <div class="invalid-feedback">Please enter your surname.</div>
       </div>
     </div>
     <div class="row">
       <div class="col">
-        <input type="text" class="form-control" placeholder="Email" aria-label="Email" name="email">
+        <!-- Email field-->
+        <input id="email" type="email" class="form-control" placeholder="Type your email" aria-label="Email"
+          name="email" required>
+        <div class="invalid-feedback">Please enter your email.</div>
+        <div id="emailHelp" class="form-text mb-1">I'll never share your email with anyone else.</div>
       </div>
     </div>
-    <textarea name="message" class="form-control" placeholder="Leave a message here" id="floatingTextarea2" style="height: 100px"></textarea>
+    <div class="mb-3">
+      <select class="form-select" aria-label="select role" id="role" name="role" required>
+        <option selected="" disabled="" value="">Please select your role</option>
+        <option value="1">2D Graphics Designer</option>
+        <option value="2">Unity 3D Developer</option>
+        <option value="3">Python Language Lover</option>
+        <option value="3">Other (put in msg)</option>
+      </select>
+      <div class="invalid-feedback">Please choose your role</div>
+    </div>
+    <!-- Message textarea-->
+    <textarea id="message" name="message" class="form-control" placeholder="Leave a message here" id="floatingTextarea2"
+      style="height: 100px"></textarea>
     <div class="col-12">
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="terms" name="terms">
-        <label class="form-check-label" for="terms">
-          I agree to the
-          <a href="#">Terms & Conditions</a>
-        </label>
+        <!-- Terms and conditions checkbox -->
+        <input class="form-check-input" type="checkbox" id="terms" name="terms" required>
+        <label for="terms" class="form-check-label">I have read, and agree to your Terms and Conditions</label>
+        <div class="invalid-feedback">Please read and consent to my Terms and Conditions</div>
       </div>
     </div>
+    <div class="col-12" data-netlify-recaptcha="true"></div>
     <div class="col-12">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="mc" name="mc">
-        <label class="form-check-label" for="mc">
-          Sign up to MC
-        </label>
-      </div>
-    </div>
-    <div class="col-12">
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <!-- The submint button; send all the data -->
+      <button id="submit_btn" type="submit" class="btn btn-primary">Submit</button>
     </div>
   </form>
 </div>
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      });
+  })();
+</script>
