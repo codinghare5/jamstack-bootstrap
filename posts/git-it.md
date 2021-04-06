@@ -1,7 +1,7 @@
 ---
 title: Git-it.
 description: I have completed Git-it tutorial.
-date: 2021-02-24
+date: 2021-01-19
 tags:
   - git
   - challenge

@@ -25,7 +25,7 @@ function tipCalculator(){
 
 </pre>
 </code>
-<h2>Tip Calculator</h2>
+<h4>Tip Calculator</h4>
 <p><b>If your bill is £50, what will you pay with 15% tip?</b></p>
 <br>
 <h4>The answer is:</h4>
