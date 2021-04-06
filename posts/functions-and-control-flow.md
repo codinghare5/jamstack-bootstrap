@@ -1,14 +1,13 @@
 ---
-title: Functions and control flow - practical.
+title: Functions and control flow.
 description: Tasks from Lesson 10.
-date: 2021-02-25
+date: 2021-02-23
 tags:
   - javascript
   - task
   - function
-  - practical
 layout: layouts/post.njk
-image: /img/coat.jpg
+image: /img/function.jpg
 ---
 
 <div class="container mt-4">
@@ -62,21 +61,21 @@ image: /img/coat.jpg
     }
     return strMessage;
   }
-  console.log("Task 1 above");
+  console.log("Task 1 below");
   console.log("-------------");
   //Calls the output message
   outputMessage();
   console.log("-------------");
-  console.log("Task 1 below");
-  console.log("Task 2 above");
+  console.log("Task 1 above");
+  console.log("Task 2 below");
   console.log("-------------");
   //Calls the output message
   var fName = 'Marcin';
   var lName = 'Mukosiej';
   fullNameGenerator(fName, lName);
   console.log("-------------");
-  console.log("Task 2 below");
-  console.log("Task 3 above");
+  console.log("Task 2 above");
+  console.log("Task 3 below");
   console.log("-------------");
   //Calls the output message
   var fName = 'Marcin';
@@ -84,8 +83,8 @@ image: /img/coat.jpg
   var fullName = fullNameGeneratorReturn(fName, lName);
   console.log(fullName);
   console.log("-------------");
-  console.log("Task 3 below");
-  console.log("Task 4 above");
+  console.log("Task 3 above");
+  console.log("Task 4 below");
   console.log("-------------");
   var temp1 = wearACoat(15);
   var temp2 = wearACoat(9);
@@ -94,8 +93,8 @@ image: /img/coat.jpg
   console.log(temp2);
   console.log(temp3);
   console.log("-------------");
-  console.log("Task 4 below");
-    console.log("Task 5 above");
+  console.log("Task 4 above");
+    console.log("Task 5 below");
   /*----- Task5 -----*/
   function wearACoatExtra(temperature){
     var strMessage;
