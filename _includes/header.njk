@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">{{ metadata.title }}</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,7 +17,7 @@
                                 <div class="nav-link dropdown-toggle text-decoration-none" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     {{ entry.title }}
                                 </div>
-                            {% else %}
+                                {% else %}
                                 <!-- commented out else statement as we don't need it i guess <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="{{ entry.url | url }}" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> {{ entry.title }} </a> <div class="nav-link dropdown-toggle ps-1" id="navbarMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#"></div> -->
                             {% endif %}
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">

@@ -1,13 +1,14 @@
 <div class="row">
   {% for post in postslist | reverse %}
-    <div class="col-md-4">
+    <div class="col-lg-3 col-md-4 col-12">
       <a href="{{ post.url | url }}" class="postlist-link">
         {% if post.data.image %}
-          <img src="{{post.data.image}}"/>
+          <img src="{{ post.data.image }}"/>
         {% endif %}
       </a>
       <a href="{{ post.url | url }}" class="postlist-link">
-        {% if post.data.title %}{{ post.data.title }}
+        {% if post.data.title %}
+          {{ post.data.title }}
         {% else %}
           <code>{{ post.url }}</code>
         {% endif %}
