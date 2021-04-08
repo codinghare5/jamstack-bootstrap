@@ -8,7 +8,7 @@ tags:
   - function
   - random
 layout: layouts/challenge.njk
-image: /img/fortune.jpg
+image: /img/fortune2.jpg
 ---
 
 <div class="container mt-4">
