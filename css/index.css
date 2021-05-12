@@ -288,3 +288,10 @@ body {
   visibility: hidden;
   text-decoration: rgba(255, 255, 255, 0);
 }
+
+@media (min-width: 959px) {
+  .image {
+    max-height: 185px;
+    overflow: hidden;
+  }
+}
