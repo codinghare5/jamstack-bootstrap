@@ -22,12 +22,13 @@ image: /img/coat.jpg
     </a>
   </p>
   <div class="collapse" id="collapse1">
-    <pre>
+
+``` js
 function percentageCalculator(number, percentage){
   return number * percentage / 100;
 }
 console.log(percentageCalculator(150, 30));
-    </pre>
+```
   </div>
 <!-- Task2 -->
   <b>Task 2</b>
@@ -37,7 +38,8 @@ console.log(percentageCalculator(150, 30));
     </a>
   </p>
   <div class="collapse" id="collapse2">
-    <pre>
+
+``` js
 function drinkOrder(size, drink) {
   let strMessage = "You have orderd a " + size;
   switch (drink) {
@@ -69,7 +71,7 @@ console.log(order2);
 console.log(order3);
 console.log(order4);
 console.log(order5);
-    </pre>
+```
   </div>
 <!-- Task3 -->
   <b>Task 3</b>
@@ -79,7 +81,8 @@ console.log(order5);
     </a>
   </p>
   <div class="collapse" id="collapse3">
-    <pre>
+
+``` js
 function calculator(number1, number2, operator) {
   let strMessage = "";
   let blnValidation = true;
@@ -137,7 +140,7 @@ console.log(calculator(100, 10, "-"));
 console.log(calculator(100, 10, "*"));
 console.log(calculator(100, 10, "/"));
 console.log(calculator(100, 10, "%"));
-    </pre>
+```
   </div>
 </div>
 <script src="/js/practical-1/task-1.js"></script>

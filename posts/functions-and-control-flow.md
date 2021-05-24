@@ -9,35 +9,48 @@ tags:
 layout: layouts/post.njk
 image: /img/function.jpg
 ---
-
 <div class="container mt-4">
   <h1>Basic Javascript tasks</h1>
   <p>Open the console to see results.</p>
-  <code>
-  <pre>
-  //function from task 1
-  function outputMessage() {
-    console.log("This is a message!");
+
+``` js
+//function from task 1
+function outputMessage() {
+  console.log("This is a message!");
+}
+//function from task 2
+function fullNameGenerator(firstName, lastName){
+  var fullName = firstName + ' ' + lastName
+  console.log(fullName);
+}
+//function from task 3
+function fullNameGeneratorReturn(firstName, lastName){
+  return firstName + ' ' + lastName;
+}
+//function from task 4
+function wearACoat(temperature){
+  var strMessage = "You don't need to wear a coat!";
+  if (temperature < 10){
+    strMessage = "You need to wear a coat.";
   }
-  //function from task 2
-  function fullNameGenerator(firstName, lastName){
-    var fullName = firstName + ' ' + lastName
-    console.log(fullName);
+  return strMessage;
+}
+//function from task 5
+function wearACoatExtra(temperature){
+  var strMessage;
+  if (temperature < 0) {
+    strMessage = "Do not go outside.";
+  } else if (temperature < 10) {
+    strMessage = "You do need a coat and a hat.";
+  } else if (temperature < 15){
+    strMessage = "You do need a coat.";
   }
-  //function from task 3
-  function fullNameGeneratorReturn(firstName, lastName){
-    return firstName + ' ' + lastName;
+  if (!strMessage) {
+    strMessage = "You don't need to wear a coat!"
   }
-  //function from task 4
-  function wearACoat(temperature){
-    var strMessage = "You don't need to wear a coat!";
-    if (temperature < 10){
-      strMessage = "You need to wear a coat.";
-    }
-    return strMessage;
-  }
-  </pre>
-  </code>
+  return strMessage;
+}
+```
 </div>
 <script>
   //function from task 1
