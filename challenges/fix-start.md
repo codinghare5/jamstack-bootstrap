@@ -11,10 +11,17 @@ image: /img/fix-start.jpg
 ---
 
 <div class="container mt-4">
-  <h2>6th Javascript Challenge</h2>
-  <p>Open the console to view the results.</p>
-  <code>
-  <pre>
+  <h4>6th Javascript Challenge</h4>
+  <div class="card card-body">
+Create a function called fixStart. It should take a single argument, a string, and return a version where all occurrences of its first character have been replaced with ‘*’, except for the first character itself. You can assume that the string is at least one character long. For example:
+
+fixStart('babble'): 'ba**le'
+fixStart('turtle'): 'tur*le'
+
+  </div>
+  <h5 class="tip">Tip: Open up the Console to view the computed results.</h5>
+
+``` js
 // FUNCTION fixStart(word)
 function fixStart(word) {
   // SPLIT the word into array of letters and store it inside new variable
@@ -36,7 +43,6 @@ function fixStart(word) {
   }
   return firstLetter + newWord.join("");
 }
-  </pre>
-  </code>
+```
 </div>
 <script src="/js/js-challenges/ch6-fixstart.js"></script>

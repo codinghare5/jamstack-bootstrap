@@ -11,8 +11,13 @@ image: /img/temperature.jpg
 ---
 
 <div class="container mt-4">
-  <h2>3nd Javascript Challenge</h2>
-  <p>Open the console to view the results.</p>
-  <code></code>
+  <h4>3rd Javascript Challenge</h4>
+  <h5 class="tip">Tip: Open up the Console to view the computed results.</h5>
+
+``` js
+const temperatureInCelsius = Math.floor((Math.random() * 101));
+const temperatureInFahrenheit = temperatureInCelsius*9/5 +32;
+console.log("It is " + temperatureInFahrenheit + "°F today. That’s " + temperatureInCelsius + "°C.");
+```
 </div>
 <script src="/js/js-challenges/ch3-temperature-converter.js"></script>

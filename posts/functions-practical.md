@@ -13,7 +13,7 @@ image: /img/coat.jpg
 
 <div class="container mt-4">
   <h1>Javascript Tasks</h1>
-  <p>Open the console to view the results.</p>
+  <h5 class="tip">Tip: Open up the Console to view the computed results.</h5>
 <!-- Task1 -->
   <b>Task 1</b>
   <p>

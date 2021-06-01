@@ -10,32 +10,33 @@ layout: layouts/post.njk
 image: /img/dom.jpg
 ---
 
+<br>
 <div id="task1wrapper">
-  <h1>This is the first task</h1>
+  <h4>This is the first task</h4>
   <img src="/img/noise.png"/>
 </div>
 <hr/>
 
 <div id="task2wrapper">
-  <h1>This is the second task</h1>
+  <h4>This is the second task</h4>
   <button onClick="task2()">Click to add content</button>
 </div>
 <hr/>
 
 <div id="task3wrapper">
-  <h1>This is task3</h1>
+  <h4>This is task3</h4>
   <div id="task3-square" style="width: 200px; height: 200px; border: 1px solid red"></div>
 </div>
 <hr/>
 
 <div id="task4wrapper">
-  <h1>This is task4</h1>
+  <h4>This is task4</h4>
   <a id="task4-link" href="https://LeedsWebDev.org">Leeds Web Dev</a>
 </div>
 <hr/>
 
 <div id="task5wrapper">
-  <h1>This is task5</h1>
+  <h4>This is task5</h4>
   <form action="/la-di-da">
     <fieldset>
       <div>

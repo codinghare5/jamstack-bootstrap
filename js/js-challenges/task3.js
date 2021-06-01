@@ -77,7 +77,7 @@ function shoppingTotal(cart, discountAmount, type) {
 // document.write(`Total price is: ${shoppingTotal(shoppingCart, 1, "alcohol")}`);
 // document.write(`Total price is: ${shoppingTotal(shoppingCart, 85, "home")}`);
 
-function ted(cart, lowPrice, highPrice, quantity) {
+function shoppingTotalBetween(cart, lowPrice, highPrice, quantity) {
   let arrItems = [];
   for (let i = 0; i < cart.length; i++) {
     let itemPrice = cart[i].price * cart[i].quantity;
@@ -94,8 +94,8 @@ function ted(cart, lowPrice, highPrice, quantity) {
   return arrItems;
 }
 
-// console.log(ted(shoppingCart, 0.1, 1, true));
-// console.log(ted(shoppingCart, 0.1, 1, false));
+// console.log(shoppingTotalBetween(shoppingCart, 0.1, 1, true));
+// console.log(shoppingTotalBetween(shoppingCart, 0.1, 1, false));
 
 var numbers = [9, 10, 12, 13, 13, 13, 15, 15, 16, 16, 18, 22, 23, 24, 24, 25];
 var numbers2 = [9, 10, 12, 13, 13, 13, 15, 15, 16, 16, 18, 22, 23, 24, 24];

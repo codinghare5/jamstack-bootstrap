@@ -10,8 +10,8 @@ layout: layouts/post.njk
 image: /img/function.jpg
 ---
 <div class="container mt-4">
-  <h1>Basic Javascript tasks</h1>
-  <p>Open the console to see results.</p>
+  <h4>Basic Javascript tasks</h4>
+  <h5 class="tip">Tip: Open up the Console to view the computed results.</h5>
 
 ``` js
 //function from task 1
