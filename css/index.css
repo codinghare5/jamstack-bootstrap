@@ -169,6 +169,14 @@ pre {
   text-decoration: underline;
 }
 
+.nav-item:last-of-type {
+  margin-right: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.1rem !important;
+}
+
 /* Posts list */
 .postlist {
   list-style: none;
@@ -284,9 +292,14 @@ body {
   line-height: 60px;
   background-image: linear-gradient(161.8deg, #f5efef, #ffd4d1);
 }
+
 .invis {
   visibility: hidden;
   text-decoration: rgba(255, 255, 255, 0);
+}
+
+.container-fluid {
+  padding: 0 !important;
 }
 
 @media (min-width: 959px) {
