@@ -42,6 +42,9 @@ main :first-child .form-check-input {
   align-items: center;
   margin-top: revert;
 }
+h5.tip {
+  color: var(--bs-success);
+}
 
 header {
   border-bottom: 1px dashed var(--lightgray);

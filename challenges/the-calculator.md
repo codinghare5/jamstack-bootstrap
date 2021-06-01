@@ -11,7 +11,7 @@ image: /img/calculator.jpg
 ---
 
 <div class="container mt-4">
-  <h2>5th Javascript Challenge</h2>
+  <h4>5th Javascript Challenge</h4>
   <p>
     <ul>
       <li>squareNumber</li>
@@ -20,7 +20,7 @@ image: /img/calculator.jpg
       <li>areaOfCircle</li>
     </ul>
   </p>
-  <p>Open the console to view the results.</p>
+  <h5 class="tip">Tip: Open up the Console to view the computed results.</h5>
   <code></code>
 </div>
 <script src="/js/js-challenges/ch5-the-calculator.js"></script>

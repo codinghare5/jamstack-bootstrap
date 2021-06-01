@@ -11,8 +11,8 @@ image: /img/tip-jar.jpg
 ---
 
 <div class="container mt-4">
-    <code>
-    <pre>
+
+``` js
 // JavaScript Tip Calculator
 function tipCalculator(){
   let totalBill = 50;
@@ -23,8 +23,7 @@ function tipCalculator(){
   myBill.innerHTML = totalBillWithTip;
 }
 
-</pre>
-</code>
+```
 <h4>Tip Calculator</h4>
 <p><b>If your bill is £50, what will you pay with 15% tip?</b></p>
 <br>
