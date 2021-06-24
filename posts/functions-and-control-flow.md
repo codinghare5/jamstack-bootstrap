@@ -11,7 +11,7 @@ image: /img/function.jpg
 ---
 <div class="container mt-4">
   <h4>Basic Javascript tasks</h4>
-  <h5 class="tip">Tip: Open up the Console to view the computed results.</h5>
+  <h5 class="tip">Tip: Open up the Console to view the results.</h5>
 
 ``` js
 //function from task 1
