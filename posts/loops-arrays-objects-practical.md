@@ -190,7 +190,7 @@ var myRecipe = {
   servings: 2,
   ingredients: [
     "pizza base",
-    "tomato sauce",
+    "tomato sos",
     "mozzarela",
     "onion",
     "mushrooms",
@@ -198,7 +198,7 @@ var myRecipe = {
     "tomato",
   ],
   directions: [
-    "Spread the sauce over the pizza base.",
+    "Spread the sos over the pizza base.",
     "Add mozzarella cheese on top.",
     "Put the all the veggies in any pattern you please.",
     "E voi'la!",
