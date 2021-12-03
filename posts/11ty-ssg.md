@@ -6,7 +6,7 @@ tags:
   - eleventy
   - task
 layout: layouts/post.njk
-image: https://www.11ty.dev/img/sites/11ty-600-js.avif
+image: https://github.com/11ty/11ty-logo/blob/master/img/logo-400x400.png
 ---
 
 <a href="/">
