@@ -10,5 +10,5 @@ image: https://github.com/11ty/11ty-logo/blob/master/img/logo-400x400.png
 ---
 
 <a href="/">
-  <img src={image} class="img-thumbnail" alt="11ty.dev">
+  <img src={{image}} class="img-thumbnail" alt="11ty.dev">
 </a>
