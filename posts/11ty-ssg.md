@@ -8,7 +8,7 @@ tags:
 layout: layouts/post.njk
 image: /img/11ty-logo.png
 ---
-
+<h3>This site is using 11ty SSG</h3>
 <a href="/">
   <img src="/img/11ty-logo.png" class="img-thumbnail" alt="11ty.dev">
 </a>
