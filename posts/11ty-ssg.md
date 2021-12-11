@@ -6,9 +6,9 @@ tags:
   - eleventy
   - task
 layout: layouts/post.njk
-image: https://github.com/11ty/11ty-logo/blob/master/img/logo-400x400.png
+image: /img/11ty-logo.png
 ---
 
 <a href="/">
-  <img src={{image}} class="img-thumbnail" alt="11ty.dev">
+  <img src="/img/11ty-logo.png" class="img-thumbnail" alt="11ty.dev">
 </a>
