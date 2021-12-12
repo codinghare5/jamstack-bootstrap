@@ -1,4 +1,4 @@
 [build]
   publish = "_site"
   command = "DEBUG=* npx eleventy"
-  node = "17.2.0"
+  node = "16.5.0"
