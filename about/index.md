@@ -7,4 +7,4 @@ eleventyNavigation:
   order: 3
 ---
 
-Here goes more information about me and the stuff I do.
+Contact form with field validation. 

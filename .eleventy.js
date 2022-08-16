@@ -16,6 +16,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
   eleventyConfig.addLayoutAlias("blog", "layouts/post.njk");
 
+  // get current year with JS
+  eleventyConfig.addShortcode("getYear", () => `${new Date().getFullYear()}`);
+
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
   });

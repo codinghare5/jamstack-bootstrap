@@ -7,20 +7,19 @@ templateClass: tmpl-post
 
   {{ content | safe }}
 
+  <hr>
+  <ul class="list-group list-group-flush">
+    {%- set next = collections.challenges | getNextCollectionItem(page) %}
+    {%- if next %}
+      <li class="list-group-item">Next:
+        <a href="{{ next.url | url }}">{{ next.data.title }}</a>
+      </li>
+    {% endif %}
+    {%- set previous = collections.challenges | getPreviousCollectionItem(page) %}
+    {%- if previous %}
+      <li class="list-group-item">Previous:
+        <a href="{{ previous.url | url }}">{{ previous.data.title }}</a>
+      </li>
+    {% endif %}
+  </ul>
 </div>
-
-<hr>
-<ul>
-  {%- set next = collections.challenges | getNextCollectionItem(page) %}
-  {%- if next %}
-    <li>Next:
-      <a href="{{ next.url | url }}">{{ next.data.title }}</a>
-    </li>
-  {% endif %}
-  {%- set previous = collections.challenges | getPreviousCollectionItem(page) %}
-  {%- if previous %}
-    <li>Previous:
-      <a href="{{ previous.url | url }}">{{ previous.data.title }}</a>
-    </li>
-  {% endif %}
-</ul>
